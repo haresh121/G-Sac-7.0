@@ -217,6 +217,7 @@ nav li:hover a{
     color: #111000;
     /* padding-top: 50px; */
     text-transform: uppercase;
+    color: white;
 }
 #workshops .wshops{
     display: flex;
@@ -291,21 +292,68 @@ nav li:hover a{
 
 .lecs{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: 70%;
     margin-top: 70px;
-    padding: 0 20px;
-    align-content: space-between;
+    padding: 0 40px;
+    /* align-content: space-between; */
+    flex-wrap: wrap;
 }
 .lecs .lec{
     display: flex;
     justify-content: space-between;
 }
-.lecs .lec .lec1:nth-child(1){
+/* .lecs .lec .lec1:nth-child(1){
     margin-right: 100px;
-}
+} */
 .lecs .lec .lec1{
-    width: 50%;
+    position: relative;
+    width: 250px;
+    border: 1px solid #7f8c8d;
+    height: 400px;
+    margin-bottom: 60px;
+    /* overflow: hidden;  */
+    text-align: justify;
+    padding: 0 15px;
+    border-radius: 10px;
+    /* transition: 0.5s; */
+    margin-right: 40px;
+}
+.lecs .lec .lec1 img{
+    position: absolute;
+    top: -10%;
+    left: -9%;
+}
+.lec1 h3{
+    margin-top: 130px;
+    position: absolute;
+    right: -10%;
+    font-family: "Montserrat", sans-serif;
+    z-index: 3;
+}
+
+.lec1 p{
+    margin-top: 170px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+}
+.lecs {
+    color: white;
+}
+@media only screen and (max-width: 998px){
+    .lecs{
+        align-items: center;
+        justify-content: center;
+    }
+    .lec{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .lecs .lec .lec1{
+        width: 300px;
+    }
 }
 #festivals{
     position: relative;
@@ -332,8 +380,8 @@ nav li:hover a{
     font-family: "Montserrat";
     text-transform: uppercase;
     margin-bottom: 90px;
-    /*color: #fff000;*/
-    color: #fff000;
+    /* color: #fff000;
+    color: #fff000; */
     text-align: center;
     font-size: 30px;
     letter-spacing: 4px;
@@ -379,7 +427,7 @@ a{
 }
 #sponsors h1{
     text-align: center;
-    color: #fff000;
+    /* color: #fff000; */
     text-transform: uppercase;
     font-family: "Montserrat";
     font-weight: 200;
@@ -419,7 +467,7 @@ a{
 }
 #gallery h1{
     text-align: center;
-    color: #fff000;
+    /* color: #fff000; */
     text-transform: uppercase;
     font-family: "Montserrat";
     font-weight: 200;

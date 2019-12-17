@@ -49,12 +49,6 @@
 			height: 100%;
 			width: 35%;
 		}
-		h2{
-			font-family: "Expressway";
-			font-size: 30px;
-			height: 0%;
-			letter-spacing: 2px;
-		}
 		h3{
 			font-family: "Montserrat", sans-serif;
 			font-size: 26px;
@@ -71,13 +65,27 @@
 			width: 60%;
 			margin-left: 20%;
 		}
+		@media only screen and (max-width: 998px){
+			.person{
+				flex-direction: column;
+			}
+			p{
+				width: 100%;
+				margin-left: 0;
+			}
+			.con{
+				width: auto;
+			}
+			img{
+				margin-left: 120px;
+			}
+		}
 	</style>
 </head>
 <body>
 	<section class="person">
 		<img src="./festivals/pete.jpeg" alt="">
 		<div class="con">
-			<h2>Short Film Contest</h2>
 			<h3>Pete Draper</h3>
 			<p>Mr. Pete has been working in the CG industry, in India and abroad, for over two decades. He is a seasoned author along with being the Co-Founder and VFX Supervisor at Makuta VFX. He conducted workshops all around the world and has been an external examiner for respected institutions in the United Kingdom.
 			In addition to his “Deconstructing the elements” book series, his feature credits include “Ghajini”, VFX pipeline supervision and digital crowd control for “Magadheera”, and fully immersive CG sequence for “Enthiran” (“Robot”). In both parts of the CGI-Heavy “Baahubali”, Makuta’s most auspicious project to date, Mr. Pete worked closely with the director, Mr. S.S. Rajamouli, throughout the pre and post-production phases along with supervising Makuta’s episodes on set. 
@@ -87,7 +95,6 @@
 	<section class="person">
 		<img src="./festivals/maha.jpg" alt="">
 		<div class="con">
-			<h2>Film Festival</h2>
 			<h3>Venkatesh Maha</h3>
 			<p>The film festival introduces us to writer-director Mr. Venketesh Maha who has worked in different capacities in the film and television industry — from a spot boy to production manager and co-director. He has also directed short films during his initial years in the film and television industry.<br><br>
 			He would be interacting with the gathering sharing his experiences as well as his journey into filmmaking and his famous take ‘C/O Kancharapalem’. Mr. Maha hails from Vijayawada, not Kancharapalem, but the small village near Visakhapatnam is dear to him. The first step is always the most challenging that might be either career altering or ending, here we present you with a person who has taken up that challenge and achieved not only excellence but also perfect solace in his most passionate film industry.
@@ -97,7 +104,6 @@
 	<section class="person">
 		<img src="./festivals/rambabu.jpg" alt="">
 		<div class="con">
-			<h2>Canon Contest</h2>
 			<h3>Rambabu Dhanisetty</h3>
 			<p>Mr. Rambabu is a photographer, editor, educator and a mentor at Canon INDIA Ltd.; He is specialized in portrait, fashion and event photography. Being an eminent personality from one of the largest, if not the largest photography merchandise firm, he has given numerous not only workshops and seminars but also owns a professional photo and post production studio working for broadcast and documentary films. 
 </p>
@@ -106,7 +112,6 @@
 	<section class="person">
 		<img src="./festivals/guru.jpg" alt="">
 		<div class="con">
-			<h2>Photography Contest</h2>
 			<h3>Guru Charan</h3>
 			<p>Photographer Guru Charan, who is by profession an engineer, is one of the most promising and magnificent photographers of our country. He is known for clicking photographs in the most adverse situation by implementing his own style to it. He has been into photography since 2012 with street photography bring his area of expertise. He believes in shooting whatever you want and however you want, but at the end, shooting your own emotion is the essence of photography. He believes in keeping things simple and is a down to earth personality, broadcasting the stories behind his pictures in addition to being a thrilling blogger.</p>
 		</div>
@@ -119,4 +124,5 @@
 		</div>
 	</section>
 </body>
+<p style="color: white;text-align: center">Return to <a href="fest.html" style="color: white">Home</a></p>
 </html>
